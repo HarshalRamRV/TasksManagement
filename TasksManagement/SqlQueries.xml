@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Queries>
+	<CreateRecord>
+		<![CDATA[]]>
+	</CreateRecord>
+	<GetRecord>
+		<![CDATA[]]>
+	</GetRecord>
+	<GetRecordById>
+		<![CDATA[]]>
+	</GetRecordById>
+	<UpdateRecord>
+		<![CDATA[]]>
+	</UpdateRecord>
+	<DeleteRecord>
+		<![CDATA[]]>
+	</DeleteRecord>
+</Queries>
