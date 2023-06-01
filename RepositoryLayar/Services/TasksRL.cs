@@ -113,8 +113,8 @@ namespace RepositoryLayar.Services
                                         TaskTitle = dataReader["TaskTitle"] != DBNull.Value ? (string)dataReader["TaskTitle"] : null,
                                         TaskDescription = dataReader["TaskDescription"] != DBNull.Value ? (string)dataReader["TaskDescription"] : null,
                                         TaskDueDate = dataReader["TaskDueDate"] != DBNull.Value ? Convert.ToDateTime(dataReader["TaskDueDate"]).ToString("dd/MM/yyyy") : null,
-                                        TaskStatus = dataReader["TaskStatus"] != DBNull.Value ? (GetRecord._TaskStatus)dataReader["TaskStatus"] : null,
-                                        TaskPriority = dataReader["TaskPriority"] != DBNull.Value ? (GetRecord._TaskPriority)dataReader["TaskPriority"] : null,
+                                        TaskStatus = dataReader["TaskStatus"] != DBNull.Value && Enum.TryParse(dataReader["TaskStatus"].ToString(), out GetRecord._TaskStatus taskStatus) ? taskStatus : null,
+                                        TaskPriority = dataReader["TaskPriority"] != DBNull.Value && Enum.TryParse(dataReader["TaskPriority"].ToString(), out GetRecord._TaskPriority taskPriority) ? taskPriority : null
 
                                     });
                                 if (Count == 0)

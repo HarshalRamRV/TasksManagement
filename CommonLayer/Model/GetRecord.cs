@@ -32,18 +32,18 @@ namespace CommonLayer.Model
 
         public enum _TaskStatus
         {
-            Started,
-            InProgress,
-            Completed
+            Started = 1,
+            InProgress = 2,
+            Completed = 3
 
         }
 
         public _TaskStatus? TaskStatus { get; set; }
         public enum _TaskPriority
         {
-            Low,
-            Medium,
-            High
+            Low = 1,
+            Medium = 2,
+            High = 3
         }
         public _TaskPriority? TaskPriority { get; set; }
     }
