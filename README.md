@@ -1,8 +1,7 @@
 # TasksManagement
 
 ## Main purpose:
-A program for creating tasks.
-Create Tasks, Update Task status and Manage Tasks 
+A .NET Web API to Create Tasks, Update Task status and Manage Tasks 
 
 ### Features
 * GET, POST, PUT, and DELETE endpoints
